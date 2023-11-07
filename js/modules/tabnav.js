@@ -28,7 +28,6 @@ export default class TabNav {
       // adicionar evento de click nas abas
       this.addTabNavEvent();
     }
-
     return this;
   }
 }
