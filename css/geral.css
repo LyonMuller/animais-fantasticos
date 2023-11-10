@@ -5,11 +5,11 @@ ul,
 li,
 dd,
 dt,
-dl{
+dl {
   margin: 0;
   padding: 0;
 }
-img{
+img {
   display: block;
   max-width: 100%;
 }
@@ -22,13 +22,13 @@ html.textomaior {
   font-size: 140%;
 }
 
-body{
+body {
   background-color: #faf6ed;
   color: #222;
   -webkit-font-smoothing: antialiased;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -52,11 +52,11 @@ body{
   color: #222;
   padding: 15px 10px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: .875rem;
-  letter-spacing: .1em;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
 }
 
 .menu li a.ativo {
@@ -75,7 +75,7 @@ body{
 }
 
 .titulo {
-  font-family: 'Playfair Display SC', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display SC", Georgia, "Times New Roman", Times, serif;
   font-size: 6rem;
   line-height: 1;
   font-weight: normal;
@@ -84,16 +84,16 @@ body{
 }
 
 .animais h2 {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-bottom: 1rem;
   color: #e54;
 }
 
 .animais h2:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 40px;
   height: 10px;
@@ -121,13 +121,13 @@ body{
   width: 18px;
 }
 
-.animais-lista::-webkit-scrollbar-thumb{
+.animais-lista::-webkit-scrollbar-thumb {
   background: #fb5;
   border-left: 4px solid #faf6ed;
   border-right: 4px solid #faf6ed;
 }
 
-.animais-lista::-webkit-scrollbar-track{
+.animais-lista::-webkit-scrollbar-track {
   background-color: #faf6ed;
 }
 
@@ -144,16 +144,16 @@ body{
 }
 
 .faq-lista dt {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   margin-top: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #e54;
   cursor: pointer;
 }
 
 .faq-lista dt:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -163,7 +163,7 @@ body{
 
 .faq-lista dd {
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 30px;
 }
 
@@ -172,16 +172,16 @@ body{
 }
 
 .dados {
-  grid-column: 3;;
+  grid-column: 3;
 }
 
-.dados li{
+.dados li {
   margin-bottom: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .dados li:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -195,88 +195,50 @@ body{
   background-color: #fb5;
 }
 
-.copy p{
+.copy p {
   padding: 20px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
 }
 
-@media (max-width: 700px){
-  .grid-container{
-    grid-template-columns: 1fr;
-  }
-  .menu,
-  .grid-section,
-  .copy{
-    grid-column: 1;
-  }
-
-  .grid-section {
-    grid-template-columns: 100px 1fr;
-    gap: 10px;
-  }
-
-  .animais-lista{
-    grid-column: 1;
-  }
-
-  .faq-lista,
-  .dados,
-  .mapa{
-    grid-column: 1/-1
-  }
-  
-  .grid-section h1{
-    font-size: 3rem;
-  }
-
-  .menu {
-    margin-top: 0;
-  }
-  
-  .copy {
-    margin-bottom: 0;
-  }
-}
-
-.js [data-tab="content"] section{
+.js [data-tab="content"] section {
   display: none;
 }
 
-[data-tab="content"] section.ativo{
+[data-tab="content"] section.ativo {
   display: block;
-  animation: show .5s forwards;
+  animation: show 0.5s forwards;
 }
 
-[data-tab="content"] section.ativo.show-right{
+[data-tab="content"] section.ativo.show-right {
   display: block;
-  animation: show-right .5s forwards;
+  animation: show-right 0.5s forwards;
 }
 
-[data-tab="content"] section.ativo.show-down{
+[data-tab="content"] section.ativo.show-down {
   display: block;
-  animation: show-down .5s forwards;
+  animation: show-down 0.5s forwards;
 }
 
-@keyframes show-right{
+@keyframes show-right {
   from {
     opacity: 0;
-    transform: translate3d(-30px,0,0);
+    transform: translate3d(-30px, 0, 0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes show-down{
+@keyframes show-down {
   from {
     opacity: 0;
-    transform: translate3d(0,-30px,0);
+    transform: translate3d(0, -30px, 0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -285,17 +247,24 @@ body{
 }
 
 [data-anime="accordion"] dt:after {
-  content: '⬎';
+  content: "";
   margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../img/arrow-red.svg") no-repeat center;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
 }
 
 [data-anime="accordion"] dt.ativo:after {
-  content: '⬏'
+  content: "";
+  transform: rotate(-90deg);
 }
 
 .js [data-anime="accordion"] dd.ativo {
   display: block;
-  animation: slideDown .5s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 @keyframes slideDown {
@@ -311,7 +280,7 @@ body{
 
 .js [data-anime="scroll"] {
   opacity: 0;
-  transition: opacity .3s, transform .3s;
+  transition: opacity 0.3s, transform 0.3s;
   transform: translate3d(-30px, 0, 0);
 }
 
@@ -322,13 +291,13 @@ body{
 
 [data-semana]::after {
   display: inline-block;
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   background: #e54;
   border-radius: 50%;
   margin-left: 4px;
-  border: 2px solid #000
+  border: 2px solid #000;
 }
 
 [data-semana].aberto::after {
@@ -337,7 +306,52 @@ body{
 
 .btc-preco {
   background: #3fa;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-weight: bold;
   border-radius: 2px;
+}
+
+.arrow-black {
+  background: url("../img/arrow-black.svg") no-repeat center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .menu,
+  .grid-section,
+  .copy {
+    grid-column: 1;
+  }
+
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+  }
+
+  .animais-lista {
+    grid-column: 1;
+  }
+
+  .faq-lista,
+  .dados,
+  .mapa {
+    grid-column: 1/-1;
+  }
+
+  .grid-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
+  .copy {
+    margin-bottom: 0;
+  }
 }
