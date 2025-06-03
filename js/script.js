@@ -11,7 +11,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import SlideNav from "./modules/slide.js";
 
-const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"');
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
